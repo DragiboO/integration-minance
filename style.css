@@ -52,4 +52,69 @@ table {
   border-spacing: 0;
 }
 
+:root {
+  font-size: 16px;
+  --main-black: #000000;
+  --main-white: #FFFFFF;
+}
+
+.app {
+  font-family: "Poppins";
+  background-color: var(--main-black);
+  min-height: 100vh;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 0.2fr 0.55fr 0.25fr;
+  padding-top: 4.75vh;
+}
+nav div {
+  display: flex;
+  align-items: center;
+}
+nav .left {
+  padding-left: 6.375vh;
+}
+nav .left img {
+  height: 85%;
+}
+nav .mid,
+nav .right {
+  justify-content: space-between;
+}
+nav .mid {
+  padding: 0 4rem 0 0;
+}
+nav .mid h2 {
+  margin-top: 1rem;
+  color: var(--main-white);
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+nav .mid div {
+  margin-top: 1rem;
+  background-color: var(--main-white);
+  padding: 0.25rem 1rem;
+  border-radius: 0.75rem;
+  gap: 0.5rem;
+}
+nav .mid div input {
+  font-weight: 500;
+  font-size: 1.25rem;
+  width: 21rem;
+  border: none;
+}
+nav .mid div ::placeholder {
+  color: var(--main-black);
+  opacity: 1;
+}
+nav .right {
+  padding: 0 1.125rem;
+}
+nav .right img:nth-child(1) {
+  margin-top: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
