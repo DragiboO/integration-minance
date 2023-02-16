@@ -1,0 +1,25 @@
+.dashboard {
+    padding: 0 6.375vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        border: none;
+        border-radius: 0.75rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 0.5rem 0.75rem;
+        background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
+
+        img {
+            height: 32px;
+            width: 32px;
+        }
+    }
+}

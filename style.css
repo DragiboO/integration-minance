@@ -66,7 +66,7 @@ table {
 
 nav {
   display: grid;
-  grid-template-columns: 0.2fr 0.55fr 0.25fr;
+  grid-template-columns: 20fr 55fr 25fr;
   padding-top: 4.75vh;
 }
 nav div {
@@ -115,6 +115,64 @@ nav .right {
 }
 nav .right img:nth-child(1) {
   margin-top: 1rem;
+}
+
+section {
+  display: grid;
+  margin-top: 5vh;
+  height: 82vh;
+  grid-template-columns: 20fr 55fr 25fr;
+  grid-template-rows: 20fr 55fr 25fr;
+}
+section .right {
+  grid-area: 1/3/4/4;
+}
+
+.menu-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-top: 3rem;
+}
+
+.dashboard {
+  padding: 0 6.375vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.dashboard button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
+}
+.dashboard button img {
+  height: 32px;
+  width: 32px;
+}
+
+.btn-menu {
+  display: flex;
+  width: 55%;
+  color: var(--main-white);
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.btn-menu img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=style.css.map */

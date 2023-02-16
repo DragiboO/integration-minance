@@ -1,0 +1,15 @@
+.btn-menu {
+    display: flex;
+    width: 55%;
+    color: var(--main-white);
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+}
