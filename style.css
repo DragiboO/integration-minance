@@ -69,6 +69,22 @@ nav {
   grid-template-columns: 20fr 55fr 25fr;
   padding-top: 4vh;
 }
+@media screen and (max-width: 1180px) {
+  nav {
+    grid-template-columns: 10fr 55fr 25fr;
+  }
+}
+@media screen and (max-width: 950px) {
+  nav {
+    grid-template-columns: 10fr 55fr 10fr;
+  }
+}
+@media screen and (max-width: 770px) {
+  nav {
+    padding-top: 1vh;
+    grid-template-columns: 20fr 55fr 10fr;
+  }
+}
 nav div {
   display: flex;
   align-items: center;
@@ -79,12 +95,47 @@ nav .left {
 nav .left img {
   height: 85%;
 }
+@media screen and (max-width: 770px) {
+  nav .left img {
+    height: 45%;
+  }
+}
+@media screen and (max-width: 1180px) {
+  nav .left {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 1180px) {
+  nav .left .show {
+    display: none;
+  }
+}
+nav .left .none {
+  display: none;
+}
+@media screen and (max-width: 1180px) {
+  nav .left .none {
+    display: block;
+    margin: 0 auto;
+  }
+}
 nav .mid,
 nav .right {
   justify-content: space-between;
 }
 nav .mid {
   padding: 0 4rem 0 0;
+}
+@media screen and (max-width: 1280px) {
+  nav .mid {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 770px) {
+  nav .mid {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 nav .mid h2 {
   margin-top: 1rem;
@@ -100,11 +151,21 @@ nav .mid div {
   border-radius: 0.75rem;
   gap: 0.5rem;
 }
+@media screen and (max-width: 770px) {
+  nav .mid div {
+    margin-left: 1rem;
+  }
+}
 nav .mid div input {
   font-weight: 500;
   font-size: 1.25rem;
   width: 21rem;
   border: none;
+}
+@media screen and (max-width: 1280px) {
+  nav .mid div input {
+    width: 50%;
+  }
 }
 nav .mid div ::placeholder {
   color: var(--main-black);
@@ -116,11 +177,32 @@ nav .right {
 nav .right img:nth-child(1) {
   margin-top: 1rem;
 }
+@media screen and (max-width: 1180px) {
+  nav .right {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  nav .right {
+    display: flex;
+    gap: 1rem;
+  }
+}
 
 section {
   display: grid;
   margin-top: 5vh;
   grid-template-columns: 20fr 55fr 25fr;
+}
+@media screen and (max-width: 1180px) {
+  section {
+    grid-template-columns: 10fr 55fr 25fr;
+  }
+}
+@media screen and (max-width: 1000px) {
+  section {
+    grid-template-columns: 5fr 55fr;
+  }
 }
 section .right {
   grid-area: 1/3/4/4;
@@ -133,17 +215,49 @@ section .right {
   justify-content: start;
   padding-top: 3rem;
 }
+@media screen and (max-width: 1180px) {
+  .menu-dashboard .resp {
+    display: none;
+  }
+}
 
 .logout {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
+@media screen and (max-width: 1180px) {
+  .logout .resp {
+    display: none;
+  }
+}
 
 .balance {
   color: var(--main-white);
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+@media screen and (max-width: 1200px) {
+  .balance {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .balance {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 770px) {
+  .balance {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-left: 2rem;
+  }
 }
 .balance .money {
   margin-left: 1rem;
@@ -180,9 +294,11 @@ section .right {
   align-items: center;
 }
 .balance .selector div {
+  display: flex;
   background-color: #292727;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  flex-wrap: wrap;
 }
 .balance .selector div .active {
   background-color: var(--main-black);
@@ -222,6 +338,11 @@ section .right {
   color: var(--main-white);
   margin: 0 1rem;
 }
+@media screen and (max-width: 1000px) {
+  .right {
+    display: none;
+  }
+}
 .right > div {
   margin: 2rem 0;
 }
@@ -231,13 +352,17 @@ section .right {
 }
 
 .dashboard {
-  padding: 0 6.375vh;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: end;
 }
+@media screen and (max-width: 770px) {
+  .dashboard {
+    align-items: center;
+  }
+}
 .dashboard button {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,6 +378,11 @@ section .right {
   height: 32px;
   width: 32px;
 }
+@media screen and (max-width: 1180px) {
+  .dashboard button .resp {
+    display: none;
+  }
+}
 
 .btn-menu {
   display: flex;
@@ -262,6 +392,11 @@ section .right {
   align-items: center;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 1180px) {
+  .btn-menu {
+    width: auto;
+  }
 }
 .btn-menu img {
   width: 30px;
@@ -325,6 +460,7 @@ section .right {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   margin: 1.5rem 0;
+  gap: 0.5rem;
 }
 .transaction-list div:nth-child(1) {
   display: flex;

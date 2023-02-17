@@ -4,10 +4,22 @@
     align-items: center;
     justify-content: start;
     padding-top: 3rem;
+
+    .resp {
+        @media screen and (max-width: 1180px) {
+            display: none;
+        }
+    }
 }
 
 .logout {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    
+    .resp {
+        @media screen and (max-width: 1180px) {
+            display: none;
+        }
+    }
 }

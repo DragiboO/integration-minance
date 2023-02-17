@@ -1,11 +1,14 @@
 .dashboard {
-    padding: 0 6.375vh;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: end;
 
+    @media screen and (max-width: 770px) {
+        align-items: center;
+    }
+
     button {
-        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,6 +23,12 @@
         img {
             height: 32px;
             width: 32px;
+        }
+
+        .resp {
+            @media screen and (max-width: 1180px) {
+                display: none;
+            }
         }
     }
 }

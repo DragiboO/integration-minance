@@ -2,6 +2,10 @@
     color: var(--main-white);
     margin: 0 1rem;
 
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
+
     & > div {
         margin: 2rem 0;
 

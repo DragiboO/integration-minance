@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     margin: 1.5rem 0;
+    gap: 0.5rem;
 
     div:nth-child(1) {
         display: flex;

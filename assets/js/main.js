@@ -20,5 +20,13 @@ new Chart(graph, {
                 backgroundColor: 'transparent',
             }
         ]
+    },
+    options: {
+        legend: {
+            display: false,
+        },
+        layout: {
+            padding: 30
+        },
     }
 })
