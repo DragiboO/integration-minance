@@ -1,3 +1,11 @@
+let mid = document.querySelector('.mid')
+let chart =  document.querySelector('.chart')
+
+// window.onload = e => {
+//     console.log('oui')
+//     chart.style.width = mid.offsetWidth + 'px'
+// }
+
 let graph = document.querySelector('#chart').getContext('2d')
 
 new Chart(graph, {

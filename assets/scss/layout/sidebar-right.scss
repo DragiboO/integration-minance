@@ -1,0 +1,13 @@
+.right {
+    color: var(--main-white);
+    margin: 0 1rem;
+
+    & > div {
+        margin: 2rem 0;
+
+        & > p {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+    }
+}

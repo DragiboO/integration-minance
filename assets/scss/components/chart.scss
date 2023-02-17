@@ -1,13 +1,9 @@
 .chart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 #chart {
-    padding: 1rem;
     background-color: rgba(48, 53, 65, 0.67);
-    height: 100%;
-    width: 100%;
     border-radius: 2rem;
+    width: 100%;
 }
