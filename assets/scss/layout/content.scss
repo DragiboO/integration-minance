@@ -1,9 +1,7 @@
 section {
     display: grid;
     margin-top: 5vh;
-    height: 82vh;
     grid-template-columns: 20fr 55fr 25fr;
-    grid-template-rows: 20fr 55fr 25fr;
 
     .right {
         grid-area: 1 / 3 / 4 / 4;

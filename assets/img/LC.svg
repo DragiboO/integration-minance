@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #29abe2;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <path class="cls-1" d="m26,52c14.36,0,26-11.64,26-26S40.36,0,26,0,0,11.64,0,26s11.64,26,26,26Zm-7.83-26.16l-3.29,1.22-.93,3.61,3.25-1.15-2.14,8.34h21.67l1.33-4.94h-13.35l1.66-6.72,3.66-1.33.86-3.67-3.44,1.26,2.71-10.61h-8.27l-3.72,13.98Z"/>
+  </g>
+</svg>
