@@ -136,6 +136,68 @@ section .right {
   padding-top: 3rem;
 }
 
+.logout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.balance {
+  color: var(--main-white);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.balance .money {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: start;
+  justify-content: center;
+}
+.balance .money p:nth-child(1) {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.balance .money p:nth-child(2) {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+.balance .money p:nth-child(2) span {
+  height: 0.75rem;
+  font-size: 0.75rem;
+  background-color: yellow;
+  color: var(--main-black);
+  padding: 0.25rem 0.35rem;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+}
+.balance .money p:nth-child(3) {
+  font-size: 1.25rem;
+}
+.balance .selector {
+  display: flex;
+  align-items: center;
+}
+.balance .selector div {
+  background-color: #292727;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.balance .selector div .active {
+  background-color: var(--main-black);
+}
+.balance .selector div button {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  color: var(--main-white);
+  border: none;
+  background-color: transparent;
+  font-size: 1.25rem;
+}
+
 .dashboard {
   padding: 0 6.375vh;
   display: flex;
